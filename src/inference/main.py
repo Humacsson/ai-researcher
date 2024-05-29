@@ -4,6 +4,7 @@ import asyncio
 import argparse
 import ollama
 
+print(os.environ['AI_RESEARCHER__OLLAMA_MODEL_NAME'])
 async def speak(speaker, content):
   if speaker:
     p = await asyncio.create_subprocess_exec(speaker, content)
