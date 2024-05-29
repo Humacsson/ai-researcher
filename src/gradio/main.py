@@ -11,5 +11,5 @@ demo = gr.Interface(
     outputs=["text"],
 )
 
-demo.launch(share=bool(os.environ['GRADIO_SHARE']))
+demo.launch(share=bool(os.environ['AI_RESEARCHER__GRADIO_SHARE']))
 

@@ -32,7 +32,7 @@ async def main():
 
       content_out = ''
       message = {'role': 'assistant', 'content': ''}
-      async for response in await client.chat(model=os.environ['OLLAMA_MODEL_NAME'], messages=messages, stream=True):
+      async for response in await client.chat(model=os.environ['AI_RESEARCHER__OLLAMA_MODEL_NAME'], messages=messages, stream=True):
         if response['done']:
           messages.append(message)
 
